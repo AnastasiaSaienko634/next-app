@@ -1,0 +1,64 @@
+/* 🔹 Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  /* Glasmorphismus-Effekt */
+  background: rgba(79, 70, 229, 0.7); /* Indigo mit Transparenz */
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Logo */
+.logo {
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+  color: #a5b4fc; /* heller Indigo */
+}
+
+/* 🔹 Navigation */
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navigation li {
+  position: relative;
+}
+
+/* 🔹 Navigation Links */
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover-Effekt mit Farbverlauf */
+.navigation a:hover {
+  background: linear-gradient(135deg, #6366f1, #a5b4fc);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.5);
+}

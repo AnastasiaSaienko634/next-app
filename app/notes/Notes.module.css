@@ -1,0 +1,35 @@
+.notesSection {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #6366f1; /* Indigo */
+}
+
+.empty {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #6b7280; /* Gray */
+  font-style: italic;
+}

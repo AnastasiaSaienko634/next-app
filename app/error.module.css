@@ -1,0 +1,70 @@
+.errorBox {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(239, 68, 68, 0.1); /* leicht roter Hintergrund */
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #ef4444; /* Rot */
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: #b91c1c;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* Sanfte Einblendung */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 1rem;
+
+  background: linear-gradient(135deg, #6366f1, #a5b4fc);
+  color: white;
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(99, 102, 241, 0.45);
+}
+
+.button:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
